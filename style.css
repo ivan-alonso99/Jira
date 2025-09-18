@@ -1,0 +1,45 @@
+body    {
+    font-family: sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+    color: black;
+}
+header  {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+main    {
+    display: flex;
+    gap: 50px;
+  justify-content: center;
+}
+.content    {
+    background-color: #f3f3f5;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+#modal form  {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.button     {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(37, 101, 157);
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+}
+#description     {
+    height: 100px; 
+}
+.newDiv     {
+    font-weight: bold;
+    background-color: rgb(215, 218, 220);
+    text-align: center;
+    border-radius: 10px;
+}

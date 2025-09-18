@@ -16,7 +16,18 @@
             <h1>Tablero</h1>
         </div>
         <div class="button-create">
-            <button>Crear</button>
+            <button class="button" onclick="openModal()">Agregar</button>
+            <div class="content-modal"> 
+                <dialog id = "modal">
+                <form action="script.js">
+                    <label for="title">Titulo de la Tarea</label>
+                    <input id="title-task" type="text" placeholder="Ingresa Tarea">
+                    <textarea name="description" placeholder="Descripcion" id="description"></textarea>
+                   <div>
+                     <button class="button" onclick="agregarTarea(event), closeModal(event)">Crear</button>
+                   </div>
+                </form>
+            </dialog></div>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
                 <path
@@ -24,12 +35,11 @@
             </svg>
         </div>
     </header>
-    <main>
-        <div id="to-do-list"></div>
-        
-        <div id="in-progress"></div>
-        <div id="code-review"></div>
-        <div id="done"></div>
+    <main> 
+        <div class="content" id="to-do-list"><h2>Por Hacer</h2></div>
+        <div class="content" id="in-progress"><h2>En Progreso</h2></div>
+        <div class="content" id="code-review"><h2>En Revision</h2></div>
+        <div class="content" id="done"><h2>HECHO</h2></div>
     </main>
     <footer>
 
